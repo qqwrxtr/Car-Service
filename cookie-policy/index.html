@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Domain | Eastern Suburbs Automotive</title>
+        <link rel="icon" href="/assets/images/car-svgrepo-com.svg" type="image/svg+xml">
+    <script src="/assets/js/cookie.js"></script>
+    <meta name="description" content="Domain Cookie Policy - How we use cookies and tracking technologies on our website. Learn about cookie types, preferences, and your control options.">
+    <meta name="keywords" content="cookie policy, cookies, tracking, Domain, Eastern Suburbs Automotive, Woolloomooloo, website cookies, privacy">
+    <link rel="canonical" href="https://domain.com/cookie-policy/">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        light: '#eff6ff'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mobile Menu Styles */
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .mobile-nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mobile-nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .mobile-nav-link:hover::before {
+            left: 100%;
+        }
+
+        /* Hide body scroll when mobile menu is open */
+        body.mobile-menu-open {
+            overflow: hidden;
+        }
+
+        .section-divider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-divider::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: #f8fafc;
+            clip-path: polygon(0 100%, 100% 0, 100% 100%);
+        }
+
+        .floating-bg {
+            background: linear-gradient(-45deg, #1e40af, #3b82f6, #60a5fa, #eff6ff);
+            background-size: 400% 400%;
+            animation: gradient-shift 15s ease-in-out infinite;
+        }
+
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .cookie-section {
+            scroll-margin-top: 100px;
+        }
+
+        .toc-link {
+            transition: all 0.3s ease;
+        }
+
+        .toc-link:hover {
+            transform: translateX(8px);
+            color: #3b82f6;
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .shape:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            animation: float1 6s ease-in-out infinite;
+        }
+
+        .shape:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            width: 60px;
+            height: 60px;
+            background: white;
+            transform: rotate(45deg);
+            animation: float2 8s ease-in-out infinite;
+        }
+
+        .shape:nth-child(3) {
+            bottom: 30%;
+            left: 20%;
+            width: 100px;
+            height: 100px;
+            background: white;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: float3 10s ease-in-out infinite;
+        }
+
+        @keyframes float1 {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        @keyframes float2 {
+            0%, 100% { transform: translateY(0px) rotate(45deg); }
+            50% { transform: translateY(-30px) rotate(225deg); }
+        }
+
+        @keyframes float3 {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-25px) scale(1.1); }
+        }
+
+        .cookie-card {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-left: 4px solid #f59e0b;
+        }
+
+        .essential-cookie {
+            background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+            border: 2px solid #22c55e;
+        }
+
+        .analytics-cookie {
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+            border: 2px solid #3b82f6;
+        }
+
+        .marketing-cookie {
+            background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+            border: 2px solid #ec4899;
+        }
+
+        .cookie-toggle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .cookie-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #3b82f6;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg" data-aos="fade-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="../" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center"> 
+                        <span class="text-white font-bold text-xl">ES</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Domain</h1>
+                        <p class="text-xs text-gray-600">Eastern Suburbs Automotive</p>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../" class="text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="../about/" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+                    <a href="../blog/" class="text-gray-700 hover:text-primary transition-colors duration-300">Blog</a>
+                    <a href="../services/" class="text-gray-700 hover:text-primary transition-colors duration-300">Services</a>
+                    <a href="../gallery/" class="text-gray-700 hover:text-primary transition-colors duration-300">Gallery</a>
+                    <a href="../contact/" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:0296620423" class="hidden sm:block text-right">
+                        <p class="text-sm font-semibold text-primary">(02) 9662 0423</p>
+                        <p class="text-xs text-gray-600">Call Today</p>
+                    </a>
+                    <button class="lg:hidden p-2 text-primary" id="mobileMenuBtn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay fixed inset-0 bg-black/50 backdrop-blur-sm z-[99] lg:hidden opacity-0 invisible transition-all duration-300" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-[100] lg:hidden transform translate-x-full transition-transform duration-300 ease-out" id="mobileMenu">
+        <div class="flex flex-col h-full">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">ES</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Domain</h3>
+                        <p class="text-xs text-gray-600">Eastern Suburbs Automotive</p>
+                    </div>
+                </div>
+                <button class="p-2 text-gray-500 hover:text-gray-700 transition-colors duration-200" id="closeMobileMenu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="flex-1 overflow-y-auto">
+                <nav class="p-6 space-y-1">
+                    <a href="../" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        <span class="font-semibold">Home</span>
+                    </a>
+                    
+                    <a href="../about/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="font-semibold">About</span>
+                    </a>
+                    
+                    <a href="../blog/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                        </svg>
+                        <span class="font-semibold">Blog</span>
+                    </a>
+                    
+                    <a href="../services/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        </svg>
+                        <span class="font-semibold">Services</span>
+                    </a>
+                    
+                    <a href="../gallery/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="font-semibold">Gallery</span>
+                    </a>
+                    
+                    <a href="../contact/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="font-semibold">Contact</span>
+                    </a>
+                </nav>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="p-6 border-t border-gray-200 bg-gradient-to-r from-light to-blue-50">
+                <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">Call us today</p>
+                    <a href="tel:0296620423" class="text-lg font-bold text-primary">(02) 9662 0423</a>
+                </div>
+                
+                <button onclick="window.location.href = '../contact/'" class="w-full mt-4 bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    Book Service Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="section-divider floating-bg text-white py-32 pt-40 relative">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="inline-block px-4 py-2 bg-white/20 rounded-full mb-6" data-aos="fade-up">
+                    <span class="text-white font-semibold text-sm">🍪 Cookie Information</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                    Cookie Policy
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed opacity-90" data-aos="fade-up" data-aos-delay="200">
+                    Understanding how we use cookies and tracking technologies to provide you with the best possible 
+                    experience on our website, while respecting your privacy choices.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        <span>Your Choice</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                        <span>Transparent Use</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        </svg>
+                        <span>Easy Control</span>
+                    </div>
+                </div>
+                
+                <div class="mt-8" data-aos="fade-up" data-aos-delay="400">
+                    <p class="text-sm text-white/70">Last Updated: May 26, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-12">
+                
+                <!-- Table of Contents -->
+                <div class="lg:col-span-1" data-aos="fade-right">
+                    <div class="sticky top-24">
+                        <div class="bg-gradient-to-br from-light to-blue-50 rounded-2xl p-6 shadow-lg">
+                            <h2 class="text-xl font-bold text-gray-900 mb-6">Contents</h2>
+                            <nav class="space-y-3">
+                                <a href="#what-are-cookies" class="toc-link block text-gray-600 hover:text-primary font-medium">What Are Cookies?</a>
+                                <a href="#how-we-use-cookies" class="toc-link block text-gray-600 hover:text-primary font-medium">How We Use Cookies</a>
+                                <a href="#types-of-cookies" class="toc-link block text-gray-600 hover:text-primary font-medium">Types of Cookies</a>
+                                <a href="#third-party-cookies" class="toc-link block text-gray-600 hover:text-primary font-medium">Third-Party Cookies</a>
+                                <a href="#cookie-preferences" class="toc-link block text-gray-600 hover:text-primary font-medium">Cookie Preferences</a>
+                                <a href="#managing-cookies" class="toc-link block text-gray-600 hover:text-primary font-medium">Managing Cookies</a>
+                                <a href="#cookie-retention" class="toc-link block text-gray-600 hover:text-primary font-medium">Cookie Retention</a>
+                                <a href="#updates-changes" class="toc-link block text-gray-600 hover:text-primary font-medium">Updates & Changes</a>
+                                <a href="#contact-cookies" class="toc-link block text-gray-600 hover:text-primary font-medium">Contact Us</a>
+                            </nav>
+                            
+                            <div class="mt-8 p-4 bg-white rounded-xl border border-gray-200">
+                                <div class="flex items-center space-x-3 mb-3">
+                                    <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900 text-sm">Questions?</p>
+                                        <p class="text-xs text-gray-600">Call us anytime</p>
+                                    </div>
+                                </div>
+                                <a href="tel:0296620423" class="text-primary font-bold">(02) 9662 0423</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookie Content -->
+                <div class="lg:col-span-3" data-aos="fade-left">
+                    
+                    <!-- What Are Cookies -->
+                    <section id="what-are-cookies" class="cookie-section mb-16">
+                        <div class="cookie-card p-6 rounded-r-xl mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="text-2xl font-bold text-amber-900">What Are Cookies?</h2>
+                            </div>
+                            <p class="text-amber-800 leading-relaxed">
+                                Cookies are small text files that websites place on your device when you visit them. 
+                                They help websites remember information about your visit, making your experience more convenient and personalized.
+                            </p>
+                        </div>
+                        
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                            <p class="text-lg mb-6">
+                                At Domain, we use cookies responsibly to enhance your browsing experience, understand how you interact with our website, 
+                                and provide you with relevant information about our automotive services. We believe in transparency about how and why we use cookies.
+                            </p>
+                            
+                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-6">
+                                <h3 class="text-lg font-semibold text-blue-900 mb-3">Cookie Basics</h3>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-800 mb-2">What cookies contain:</h4>
+                                        <ul class="space-y-1 text-blue-700 text-sm">
+                                            <li>• A unique identifier for your session</li>
+                                            <li>• Website preferences and settings</li>
+                                            <li>• Information about pages you've visited</li>
+                                            <li>• Items in your shopping cart or forms</li>
+                                            <li>• Login status and authentication</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-800 mb-2">What cookies DON'T contain:</h4>
+                                        <ul class="space-y-1 text-blue-700 text-sm">
+                                            <li>• Personal information like names or addresses</li>
+                                            <li>• Credit card or financial information</li>
+                                            <li>• Passwords or sensitive data</li>
+                                            <li>• Information from other websites</li>
+                                            <li>• Viruses or malicious software</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- How We Use Cookies -->
+                    <section id="how-we-use-cookies" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">How We Use Cookies</h2>
+                        
+                        <div class="bg-gradient-to-r from-light to-blue-50 rounded-2xl p-8 mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Cookie Philosophy</h3>
+                            <p class="text-gray-700 mb-6">
+                                We only use cookies that provide genuine value to your experience or help us improve our services. 
+                                We don't sell your data or use cookies for invasive tracking.
+                            </p>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Website Functionality</h4>
+                                            <p class="text-gray-600 text-sm">Remember your preferences, form data, and navigation choices</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Performance Analysis</h4>
+                                            <p class="text-gray-600 text-sm">Understand how visitors use our site to improve performance</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Security</h4>
+                                            <p class="text-gray-600 text-sm">Protect against spam, fraud, and unauthorized access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-green-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Service Improvement</h4>
+                                            <p class="text-gray-600 text-sm">Identify areas where we can enhance our automotive services</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-yellow-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <div class="w-2 h-2 bg-yellow-600 rounded-full"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Communication</h4>
+                                            <p class="text-gray-600 text-sm">Provide relevant information about services and maintenance</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-purple-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Personalization</h4>
+                                            <p class="text-gray-600 text-sm">Customize content based on your automotive interests</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Types of Cookies -->
+                    <section id="types-of-cookies" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Types of Cookies We Use</h2>
+                        
+                        <div class="space-y-8">
+                            <!-- Essential Cookies -->
+                            <div class="essential-cookie rounded-2xl p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-semibold text-green-900">Essential Cookies</h3>
+                                        <p class="text-green-700 text-sm">Required for basic website functionality - Always Active</p>
+                                    </div>
+                                    <div class="cookie-toggle">
+                                        <input type="checkbox" id="essential-cookies" checked disabled>
+                                        <span class="slider"></span>
+                                    </div>
+                                </div>
+                                <p class="text-green-800 mb-4">
+                                    These cookies are necessary for our website to function properly. They enable core functionality such as 
+                                    security, network management, and accessibility.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold text-green-800 mb-2">Examples include:</h4>
+                                        <ul class="space-y-1 text-green-700 text-sm">
+                                            <li>• Session cookies for navigation</li>
+                                            <li>• Security tokens and authentication</li>
+                                            <li>• Load balancing and performance</li>
+                                            <li>• Contact form anti-spam protection</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-green-800 mb-2">Duration:</h4>
+                                        <p class="text-green-700 text-sm">Session cookies expire when you close your browser. Persistent essential cookies typically last 1-12 months.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Analytics Cookies -->
+                            <div class="analytics-cookie rounded-2xl p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-semibold text-blue-900">Analytics & Performance Cookies</h3>
+                                        <p class="text-blue-700 text-sm">Help us understand how visitors interact with our website</p>
+                                    </div>
+                                    <div class="cookie-toggle">
+                                        <input type="checkbox" id="analytics-cookies" checked>
+                                        <span class="slider"></span>
+                                    </div>
+                                </div>
+                                <p class="text-blue-800 mb-4">
+                                    These cookies help us understand how visitors interact with our website by collecting and reporting 
+                                    information anonymously. This helps us improve our website performance and user experience.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-800 mb-2">What we track:</h4>
+                                        <ul class="space-y-1 text-blue-700 text-sm">
+                                            <li>• Page views and user sessions</li>
+                                            <li>• Time spent on pages</li>
+                                            <li>• Most popular content areas</li>
+                                            <li>• Website performance metrics</li>
+                                            <li>• Error tracking and debugging</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-800 mb-2">Services used:</h4>
+                                        <ul class="space-y-1 text-blue-700 text-sm">
+                                            <li>• Google Analytics (anonymized)</li>
+                                            <li>• Website performance monitoring</li>
+                                            <li>• Heat mapping (when enabled)</li>
+                                            <li>• Error logging services</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Functional Cookies -->
+                            <div class="bg-purple-50 border-2 border-purple-300 rounded-2xl p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-semibold text-purple-900">Functional Cookies</h3>
+                                        <p class="text-purple-700 text-sm">Remember your preferences and enhance your experience</p>
+                                    </div>
+                                    <div class="cookie-toggle">
+                                        <input type="checkbox" id="functional-cookies" checked>
+                                        <span class="slider"></span>
+                                    </div>
+                                </div>
+                                <p class="text-purple-800 mb-4">
+                                    These cookies enable enhanced functionality and personalization. They remember your choices and 
+                                    preferences to provide a more personalized experience.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold text-purple-800 mb-2">Functionality includes:</h4>
+                                        <ul class="space-y-1 text-purple-700 text-sm">
+                                            <li>• Language and region preferences</li>
+                                            <li>• Form data and contact preferences</li>
+                                            <li>• Accessibility settings</li>
+                                            <li>• Website theme preferences</li>
+                                            <li>• Service appointment scheduling</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-purple-800 mb-2">Impact if disabled:</h4>
+                                        <p class="text-purple-700 text-sm">
+                                            You may need to re-enter preferences on each visit, and some personalized 
+                                            features may not work as expected.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Marketing Cookies -->
+                            <div class="marketing-cookie rounded-2xl p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-pink-600 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-semibold text-pink-900">Marketing & Advertising Cookies</h3>
+                                        <p class="text-pink-700 text-sm">Show you relevant content and measure advertising effectiveness</p>
+                                    </div>
+                                    <div class="cookie-toggle">
+                                        <input type="checkbox" id="marketing-cookies">
+                                        <span class="slider"></span>
+                                    </div>
+                                </div>
+                                <p class="text-pink-800 mb-4">
+                                    These cookies track your online activity to help us deliver more relevant advertising and measure 
+                                    the effectiveness of our marketing campaigns. They are only used with your consent.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold text-pink-800 mb-2">Used for:</h4>
+                                        <ul class="space-y-1 text-pink-700 text-sm">
+                                            <li>• Relevant automotive service ads</li>
+                                            <li>• Social media integration</li>
+                                            <li>• Email marketing personalization</li>
+                                            <li>• Retargeting campaigns</li>
+                                            <li>• Campaign effectiveness measurement</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-pink-800 mb-2">Third-party services:</h4>
+                                        <ul class="space-y-1 text-pink-700 text-sm">
+                                            <li>• Google Ads and remarketing</li>
+                                            <li>• Facebook/Meta advertising</li>
+                                            <li>• Email marketing platforms</li>
+                                            <li>• Social media plugins</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Third-Party Cookies -->
+                    <section id="third-party-cookies" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Third-Party Cookies & Services</h2>
+                        
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl mb-8">
+                            <div class="flex items-center mb-3">
+                                <svg class="w-6 h-6 text-yellow-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <h3 class="text-lg font-semibold text-yellow-800">Third-Party Services</h3>
+                            </div>
+                            <p class="text-yellow-700">
+                                Some cookies on our website are set by trusted third-party services. We work only with reputable 
+                                companies that share our commitment to privacy and data protection.
+                            </p>
+                        </div>
+                        
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="bg-white border border-gray-200 rounded-xl p-6">
+                                <div class="flex items-center mb-4">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%234285f4' d='M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z'/%3E%3Cpath fill='%2334a853' d='M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z'/%3E%3Cpath fill='%23fbbc04' d='M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z'/%3E%3Cpath fill='%23ea4335' d='M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z'/%3E%3C/svg%3E" alt="Google" class="w-8 h-8 mr-3">
+                                    <h3 class="text-lg font-semibold text-gray-900">Google Services</h3>
+                                </div>
+                                <p class="text-gray-600 mb-4">We use several Google services that may set cookies:</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li>• <strong>Google Analytics:</strong> Website analytics (anonymized data)</li>
+                                    <li>• <strong>Google Maps:</strong> Location services and directions</li>
+                                    <li>• <strong>Google Fonts:</strong> Website typography</li>
+                                    <li>• <strong>reCAPTCHA:</strong> Form spam protection</li>
+                                </ul>
+                                <a href="https://policies.google.com/technologies/cookies" target="_blank" class="inline-flex items-center mt-4 text-primary hover:text-secondary transition-colors duration-300">
+                                    Google Cookie Policy
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-xl p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Other Services</h3>
+                                </div>
+                                <p class="text-gray-600 mb-4">Additional third-party services we may use:</p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li>• <strong>Social Media:</strong> Facebook, Instagram integration</li>
+                                    <li>• <strong>Communication:</strong> Live chat and support tools</li>
+                                    <li>• <strong>Analytics:</strong> Performance and user behavior tracking</li>
+                                    <li>• <strong>Marketing:</strong> Email and advertising platforms</li>
+                                </ul>
+                                <p class="text-gray-600 text-sm mt-4">
+                                    Each service has its own privacy policy and cookie practices. We recommend reviewing 
+                                    their policies for complete information.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Cookie Preferences -->
+                    <section id="cookie-preferences" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Your Cookie Preferences</h2>
+                        
+                        <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Take Control of Your Privacy</h3>
+                            <p class="text-gray-700 mb-6">
+                                We believe you should have full control over your privacy. You can customize your cookie preferences 
+                                at any time and decide which types of cookies you're comfortable with.
+                            </p>
+                            
+                            <div class="bg-white rounded-xl p-6 border border-gray-200">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-4">Cookie Information Center</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-center justify-between p-4 bg-green-50 rounded-lg">
+                                        <div>
+                                            <h5 class="font-semibold text-green-900">Essential Cookies</h5>
+                                            <p class="text-green-700 text-sm">Required for basic website functionality</p>
+                                        </div>
+                                        <div class="px-3 py-1 bg-green-600 text-white text-xs font-semibold rounded-full">
+                                            Always Active
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
+                                        <div>
+                                            <h5 class="font-semibold text-blue-900">Analytics Cookies</h5>
+                                            <p class="text-blue-700 text-sm">Help us understand website performance</p>
+                                        </div>
+                                        <div class="px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+                                            Optional
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-4 bg-purple-50 rounded-lg">
+                                        <div>
+                                            <h5 class="font-semibold text-purple-900">Functional Cookies</h5>
+                                            <p class="text-purple-700 text-sm">Remember your preferences and settings</p>
+                                        </div>
+                                        <div class="px-3 py-1 bg-purple-600 text-white text-xs font-semibold rounded-full">
+                                            Optional
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-4 bg-pink-50 rounded-lg">
+                                        <div>
+                                            <h5 class="font-semibold text-pink-900">Marketing Cookies</h5>
+                                            <p class="text-pink-700 text-sm">Show relevant ads and measure effectiveness</p>
+                                        </div>
+                                        <div class="px-3 py-1 bg-pink-600 text-white text-xs font-semibold rounded-full">
+                                            Optional
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Note:</strong> Cookie preferences are typically managed through your browser settings 
+                                        or through cookie consent banners that appear when you first visit websites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                            <div class="flex items-center mb-3">
+                                <svg class="w-6 h-6 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <h3 class="text-lg font-semibold text-blue-800">Cookie Management</h3>
+                            </div>
+                            <p class="text-blue-700">
+                                Most websites use cookie consent banners or preference centers to allow you to control cookie settings. 
+                                You can also manage cookies through your browser settings as described in the "Managing Cookies" section below.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Managing Cookies -->
+                    <section id="managing-cookies" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Managing Cookies</h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-gray-900">Browser Cookie Settings</h3>
+                                </div>
+                                <p class="text-gray-600 mb-6">
+                                    Most web browsers allow you to control cookies through their settings preferences. 
+                                    Here's how to manage cookies in popular browsers:
+                                </p>
+                                
+                                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-6 h-6 bg-blue-500 rounded mr-2"></div>
+                                            <h4 class="font-semibold text-gray-900">Chrome</h4>
+                                        </div>
+                                        <ol class="text-sm text-gray-700 space-y-1">
+                                            <li>1. Click the three dots menu</li>
+                                            <li>2. Go to Settings > Privacy and security</li>
+                                            <li>3. Click "Cookies and other site data"</li>
+                                            <li>4. Choose your preferred settings</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-6 h-6 bg-orange-500 rounded mr-2"></div>
+                                            <h4 class="font-semibold text-gray-900">Firefox</h4>
+                                        </div>
+                                        <ol class="text-sm text-gray-700 space-y-1">
+                                            <li>1. Click the menu button</li>
+                                            <li>2. Select Settings</li>
+                                            <li>3. Go to Privacy & Security</li>
+                                            <li>4. Adjust "Cookies and Site Data"</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-6 h-6 bg-blue-600 rounded mr-2"></div>
+                                            <h4 class="font-semibold text-gray-900">Safari</h4>
+                                        </div>
+                                        <ol class="text-sm text-gray-700 space-y-1">
+                                            <li>1. Click Safari menu</li>
+                                            <li>2. Choose Preferences</li>
+                                            <li>3. Click Privacy tab</li>
+                                            <li>4. Manage cookie settings</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-6 h-6 bg-blue-700 rounded mr-2"></div>
+                                            <h4 class="font-semibold text-gray-900">Edge</h4>
+                                        </div>
+                                        <ol class="text-sm text-gray-700 space-y-1">
+                                            <li>1. Click the three dots menu</li>
+                                            <li>2. Go to Settings</li>
+                                            <li>3. Select Privacy, search, and services</li>
+                                            <li>4. Manage "Cookies and site permissions"</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-6 h-6 bg-red-500 rounded mr-2"></div>
+                                            <h4 class="font-semibold text-gray-900">Opera</h4>
+                                        </div>
+                                        <ol class="text-sm text-gray-700 space-y-1">
+                                            <li>1. Click the Opera menu</li>
+                                            <li>2. Go to Settings</li>
+                                            <li>3. Click Privacy & security</li>
+                                            <li>4. Adjust "Cookies and other site data"</li>
+                                        </ol>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <div class="flex items-center mb-3">
+                                            <div class="w-6 h-6 bg-purple-500 rounded mr-2"></div>
+                                            <h4 class="font-semibold text-gray-900">Mobile</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700">
+                                            Mobile browsers have similar settings in their respective settings menus. 
+                                            Look for "Privacy" or "Site Settings" options.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl">
+                                <div class="flex items-center mb-3">
+                                    <svg class="w-6 h-6 text-amber-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                    </svg>
+                                    <h3 class="text-lg font-semibold text-amber-800">Impact of Disabling Cookies</h3>
+                                </div>
+                                <p class="text-amber-700 mb-4">
+                                    While you can disable all cookies, this may affect your browsing experience:
+                                </p>
+                                <ul class="space-y-2 text-amber-700">
+                                    <li>• Some website features may not work properly</li>
+                                    <li>• You may need to re-enter information on each visit</li>
+                                    <li>• Personalized content and recommendations won't be available</li>
+                                    <li>• Form data and preferences won't be remembered</li>
+                                    <li>• Some pages may load more slowly</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Cookie Retention -->
+                    <section id="cookie-retention" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Cookie Retention & Expiration</h2>
+                        
+                        <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">How Long We Keep Cookies</h3>
+                            <p class="text-gray-700 mb-6">
+                                Different types of cookies are stored for different periods, depending on their purpose and legal requirements. 
+                                We follow industry best practices for cookie retention.
+                            </p>
+                            
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="bg-white rounded-xl p-6 border border-gray-200">
+                                    <h4 class="font-semibold text-gray-900 mb-4">Session Cookies</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-gray-700">Duration:</span>
+                                            <span class="font-semibold text-green-600">Until browser closes</span>
+                                        </div>
+                                        <div class="flex items-start justify-between">
+                                            <span class="text-gray-700">Purpose:</span>
+                                            <span class="text-sm text-gray-600 text-right max-w-xs">Temporary functionality during your visit</span>
+                                        </div>
+                                        <div class="flex items-start justify-between">
+                                            <span class="text-gray-700">Examples:</span>
+                                            <span class="text-sm text-gray-600 text-right max-w-xs">Shopping cart, form data, navigation state</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 border border-gray-200">
+                                    <h4 class="font-semibold text-gray-900 mb-4">Persistent Cookies</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-gray-700">Duration:</span>
+                                            <span class="font-semibold text-blue-600">1 month to 2 years</span>
+                                        </div>
+                                        <div class="flex items-start justify-between">
+                                            <span class="text-gray-700">Purpose:</span>
+                                            <span class="text-sm text-gray-600 text-right max-w-xs">Remember preferences across visits</span>
+                                        </div>
+                                        <div class="flex items-start justify-between">
+                                            <span class="text-gray-700">Examples:</span>
+                                            <span class="text-sm text-gray-600 text-right max-w-xs">Login status, language preferences, analytics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-white border border-gray-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Cookie Expiration Schedule</h3>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-sm">
+                                        <thead>
+                                            <tr class="border-b border-gray-200">
+                                                <th class="text-left py-3 font-semibold text-gray-900">Cookie Type</th>
+                                                <th class="text-left py-3 font-semibold text-gray-900">Typical Duration</th>
+                                                <th class="text-left py-3 font-semibold text-gray-900">Auto-Renewal</th>
+                                                <th class="text-left py-3 font-semibold text-gray-900">Manual Deletion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-100">
+                                            <tr>
+                                                <td class="py-3 text-gray-700">Essential/Security</td>
+                                                <td class="py-3 text-gray-600">Session to 12 months</td>
+                                                <td class="py-3 text-green-600">✓ As needed</td>
+                                                <td class="py-3 text-red-600">⚠️ May break functionality</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 text-gray-700">Analytics</td>
+                                                <td class="py-3 text-gray-600">1-24 months</td>
+                                                <td class="py-3 text-green-600">✓ On revisit</td>
+                                                <td class="py-3 text-green-600">✓ Safe to delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 text-gray-700">Functional</td>
+                                                <td class="py-3 text-gray-600">1-12 months</td>
+                                                <td class="py-3 text-yellow-600">~ Based on usage</td>
+                                                <td class="py-3 text-yellow-600">⚠️ May reset preferences</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 text-gray-700">Marketing</td>
+                                                <td class="py-3 text-gray-600">1-24 months</td>
+                                                <td class="py-3 text-green-600">✓ If consented</td>
+                                                <td class="py-3 text-green-600">✓ Safe to delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 text-gray-700">Third-party</td>
+                                                <td class="py-3 text-gray-600">Varies by service</td>
+                                                <td class="py-3 text-blue-600">~ Per service policy</td>
+                                                <td class="py-3 text-blue-600">~ Check service settings</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-blue-900 mb-4">Automatic Cookie Cleanup</h3>
+                                <p class="text-blue-800 mb-4">
+                                    Domain automatically manages cookie lifecycle to respect your privacy:
+                                </p>
+                                <ul class="space-y-2 text-blue-800">
+                                    <li>• <strong>Expired cookies</strong> are automatically removed by your browser</li>
+                                    <li>• <strong>Unused cookies</strong> from old sessions are periodically cleaned</li>
+                                    <li>• <strong>Revoked consent</strong> immediately stops new cookie creation</li>
+                                    <li>• <strong>Third-party cookies</strong> are removed when partnerships end</li>
+                                    <li>• <strong>Legal compliance</strong> ensures retention doesn't exceed necessary periods</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Updates & Changes -->
+                    <section id="updates-changes" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Policy Updates & Changes</h2>
+                        
+                        <div class="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-r-xl mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-orange-900">Policy Evolution</h3>
+                            </div>
+                            <p class="text-orange-800 leading-relaxed">
+                                This Cookie Policy may be updated periodically to reflect changes in our practices, 
+                                new technologies, or legal requirements. We're committed to keeping you informed 
+                                about how we use cookies and protecting your privacy choices.
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-white border border-gray-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">How We Handle Updates</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <span class="text-white font-bold text-sm">1</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Minor Updates</h4>
+                                            <p class="text-gray-600 text-sm">Small changes like contact information, typo corrections, or clarifications are made without notice but reflected in the "Last Updated" date.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <span class="text-white font-bold text-sm">2</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Significant Changes</h4>
+                                            <p class="text-gray-600 text-sm">Major changes to cookie types, data usage, or third-party services will be communicated via email and website notification at least 30 days in advance.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <span class="text-white font-bold text-sm">3</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Consent Re-confirmation</h4>
+                                            <p class="text-gray-600 text-sm">If new cookie types are introduced or existing ones are used for new purposes, we'll request your consent again through our cookie banner.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <span class="text-white font-bold text-sm">4</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Legal Compliance</h4>
+                                            <p class="text-gray-600 text-sm">Updates required by changes in privacy laws or regulations will be implemented promptly with appropriate user notification.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-green-900 mb-4">Version History</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center p-3 bg-white rounded-lg">
+                                        <div>
+                                            <span class="font-semibold text-green-900">Version 2.1</span>
+                                            <span class="text-green-700 text-sm ml-2">Current</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-green-800 font-medium">May 26, 2025</span>
+                                            <p class="text-green-600 text-sm">Enhanced preference controls, updated third-party services</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <div>
+                                            <span class="font-semibold text-gray-900">Version 2.0</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-gray-800 font-medium">February 15, 2025</span>
+                                            <p class="text-gray-600 text-sm">Major restructure, new cookie categories added</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <div>
+                                            <span class="font-semibold text-gray-900">Version 1.5</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-gray-800 font-medium">October 8, 2024</span>
+                                            <p class="text-gray-600 text-sm">Added marketing cookies, improved descriptions</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <div>
+                                            <span class="font-semibold text-gray-900">Version 1.0</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="text-gray-800 font-medium">March 10, 2023</span>
+                                            <p class="text-gray-600 text-sm">Initial cookie policy published</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+                                <div class="flex items-center mb-3">
+                                    <svg class="w-6 h-6 text-yellow-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                    </svg>
+                                    <h3 class="text-lg font-semibold text-yellow-800">Stay Informed</h3>
+                                </div>
+                                <p class="text-yellow-700 mb-4">
+                                    To stay updated on cookie policy changes:
+                                </p>
+                                <ul class="space-y-1 text-yellow-700 text-sm">
+                                    <li>• Check the "Last Updated" date at the top of this page</li>
+                                    <li>• Subscribe to our newsletter for important policy updates</li>
+                                    <li>• Follow us on social media for announcements</li>
+                                    <li>• Contact us directly if you have questions about changes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Us -->
+                    <section id="contact-cookies" class="cookie-section mb-16">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Contact Us About Cookies</h2>
+                        
+                        <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Questions About Our Cookie Usage?</h3>
+                            <p class="text-gray-700 mb-6">
+                                We're here to help you understand our cookie practices and assist with any privacy concerns. 
+                                Our team is committed to transparency and respecting your privacy choices.
+                            </p>
+                            
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-6">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Phone Support</h4>
+                                            <p class="text-gray-600">Speak directly with our team</p>
+                                            <a href="tel:0296620423" class="text-primary font-bold hover:text-secondary transition-colors duration-300">(02) 9662 0423</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Email Contact</h4>
+                                            <p class="text-gray-600">Written inquiries and documentation</p>
+                                            <a href="../contact/" class="text-primary font-semibold hover:text-secondary transition-colors duration-300">Contact Form →</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Visit Our Shop</h4>
+                                            <p class="text-gray-600">In-person privacy consultation</p>
+                                            <p class="text-gray-800">137-157 Bourke Street<br>Woolloomooloo NSW 2011</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 border border-gray-200">
+                                    <h4 class="font-semibold text-gray-900 mb-4">Business Hours</h4>
+                                    <div class="space-y-3 text-gray-700">
+                                        <div class="flex justify-between">
+                                            <span>Monday - Friday</span>
+                                            <span class="font-medium">7:00 AM - 6:00 PM</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Saturday</span>
+                                            <span class="font-medium">8:00 AM - 4:00 PM</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Sunday</span>
+                                            <span class="font-medium">Emergency Only</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span class="text-sm font-semibold text-green-800">Privacy Response Time</span>
+                                        </div>
+                                        <p class="text-sm text-green-700">
+                                            Cookie and privacy questions typically answered within 1-2 business days. 
+                                            Complex requests may take up to 5 business days.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-white border border-gray-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Common Cookie Questions</h3>
+                                <div class="space-y-4">
+                                    <div class="border-l-4 border-blue-300 pl-4">
+                                        <h4 class="font-semibold text-gray-900 mb-1">How do I completely disable cookies?</h4>
+                                        <p class="text-gray-600 text-sm">You can disable all cookies through your browser settings, but this may significantly impact website functionality. We recommend using our cookie preference center for granular control.</p>
+                                    </div>
+                                    
+                                    <div class="border-l-4 border-green-300 pl-4">
+                                        <h4 class="font-semibold text-gray-900 mb-1">Why do I still see the cookie banner after accepting?</h4>
+                                        <p class="text-gray-600 text-sm">This may happen if cookies are being blocked by your browser, you're in private/incognito mode, or if you've cleared your cookies. The banner will reappear until preferences are successfully saved.</p>
+                                    </div>
+                                    
+                                    <div class="border-l-4 border-yellow-300 pl-4">
+                                        <h4 class="font-semibold text-gray-900 mb-1">Do you share cookie data with other companies?</h4>
+                                        <p class="text-gray-600 text-sm">We only share anonymized, aggregated data with trusted partners for analytics and service improvement. We never sell personal data or detailed browsing information to third parties.</p>
+                                    </div>
+                                    
+                                    <div class="border-l-4 border-purple-300 pl-4">
+                                        <h4 class="font-semibold text-gray-900 mb-1">Can I request all my cookie data?</h4>
+                                        <p class="text-gray-600 text-sm">Yes, under Australian Privacy Principles, you can request access to any personal information we hold, including data collected through cookies. Contact us to submit a data access request.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                                <div class="flex items-center mb-3">
+                                    <svg class="w-6 h-6 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <h3 class="text-lg font-semibold text-blue-800">Privacy Rights</h3>
+                                </div>
+                                <p class="text-blue-700">
+                                    You have the right to know what cookies we use, why we use them, and how to control them. 
+                                    If you believe we're not handling your cookie preferences correctly, you can contact the 
+                                    Office of the Australian Information Commissioner (OAIC) or NSW Fair Trading.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-8" data-aos="fade-up">Take Control of Your Cookie Preferences</h2>
+            <p class="text-xl mb-12 max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Your privacy matters to us. Customize your cookie settings to match your preferences, 
+                or contact us if you have any questions about our cookie practices.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12" data-aos="fade-up" data-aos-delay="400">
+                <a href="../contact/" class="bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    Contact Us About Cookies
+                </a>
+                <a href="../privacy-policy/" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300">
+                    Read Privacy Policy
+                </a>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80" data-aos="fade-up" data-aos-delay="600">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                    <span>Your Choice</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                    <span>Full Transparency</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span>Easy Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">ES</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Domain</h3>
+                            <p class="text-gray-400">Professional Auto Services</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+                        Your trusted automotive service partner in Woolloomooloo. Professional repairs, 
+                        transparent pricing, and reliable service since 2010.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="bg-white/10 rounded-lg p-3">
+                            <p class="text-sm font-semibold">(02) 9662 0423</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Engine Repair</a></li>
+                        <li><a href="../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Brake Service</a></li>
+                        <li><a href="../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Transmission</a></li>
+                        <li><a href="../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Air Conditioning</a></li>
+                        <li><a href="../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../about/" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="../contact/" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="../gallery/" class="text-gray-300 hover:text-white transition-colors duration-300">Gallery</a></li>
+                        <li><a href="../privacy-policy/" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="../terms-conditions/" class="text-gray-300 hover:text-white transition-colors duration-300">Terms & Conditions</a></li>
+                        <li><a href="../cookie-policy/" class="text-gray-300 hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Domain - Eastern Suburbs Automotive. All rights reserved. 
+                    <span class="text-primary">Licensed automotive repair facility in Woolloomooloo, NSW.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        function openMobileMenu() {
+            mobileMenu?.classList.add('active');
+            mobileMenuOverlay?.classList.add('active');
+            document.body.classList.add('mobile-menu-open');
+        }
+
+        function closeMobileMenuFunc() {
+            mobileMenu?.classList.remove('active');
+            mobileMenuOverlay?.classList.remove('active');
+            document.body.classList.remove('mobile-menu-open');
+        }
+
+        // Event listeners
+        mobileMenuBtn?.addEventListener('click', openMobileMenu);
+        closeMobileMenu?.addEventListener('click', closeMobileMenuFunc);
+        mobileMenuOverlay?.addEventListener('click', closeMobileMenuFunc);
+
+        // Close mobile menu when clicking nav links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(closeMobileMenuFunc, 150);
+            });
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu?.classList.contains('active')) {
+                closeMobileMenuFunc();
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024 && mobileMenu?.classList.contains('active')) {
+                closeMobileMenuFunc();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Table of contents highlighting
+        function highlightCurrentSection() {
+            const sections = document.querySelectorAll('.cookie-section');
+            const tocLinks = document.querySelectorAll('.toc-link');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 150;
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                tocLinks.forEach(link => {
+                    link.classList.remove('text-secondary', 'font-semibold');
+                    link.classList.add('text-gray-600');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.remove('text-gray-600');
+                        link.classList.add('text-secondary', 'font-semibold');
+                    }
+                });
+            });
+        }
+
+        // Print functionality
+        function addPrintStyles() {
+            const printStyles = document.createElement('style');
+            printStyles.textContent = `
+                @media print {
+                    nav, footer, .floating-shapes, .mobile-menu, .mobile-menu-overlay {
+                        display: none !important;
+                    }
+                    
+                    body {
+                        font-size: 12px;
+                        line-height: 1.4;
+                        color: #000 !important;
+                        background: white !important;
+                    }
+                    
+                    .floating-bg {
+                        background: white !important;
+                        color: #000 !important;
+                    }
+                    
+                    .text-white {
+                        color: #000 !important;
+                    }
+                    
+                    .bg-gradient-to-r,
+                    .bg-gradient-to-br {
+                        background: #f8f9fa !important;
+                    }
+                    
+                    a {
+                        color: #000 !important;
+                        text-decoration: underline;
+                    }
+                    
+                    .shadow-lg,
+                    .shadow-xl,
+                    .shadow-2xl {
+                        box-shadow: none !important;
+                    }
+                    
+                    .cookie-card,
+                    .essential-cookie,
+                    .analytics-cookie,
+                    .marketing-cookie {
+                        background: #f8f9fa !important;
+                        color: #000 !important;
+                        border-color: #ddd !important;
+                    }
+                }
+            `;
+            document.head.appendChild(printStyles);
+        }
+
+        // Accessibility improvements
+        function initAccessibility() {
+            // Add skip link
+            const skipLink = document.createElement('a');
+            skipLink.href = '#main-content';
+            skipLink.textContent = 'Skip to main content';
+            skipLink.style.cssText = `
+                position: absolute;
+                top: -40px;
+                left: 6px;
+                background: #000;
+                color: #fff;
+                padding: 8px;
+                text-decoration: none;
+                border-radius: 4px;
+                z-index: 1001;
+                transition: top 0.3s;
+            `;
+            skipLink.addEventListener('focus', () => {
+                skipLink.style.top = '6px';
+            });
+            skipLink.addEventListener('blur', () => {
+                skipLink.style.top = '-40px';
+            });
+            document.body.insertBefore(skipLink, document.body.firstChild);
+
+            // Add main content id
+            const mainContent = document.querySelector('section.py-20');
+            if (mainContent) {
+                mainContent.id = 'main-content';
+            }
+
+            // Enhance keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab') {
+                    document.body.classList.add('keyboard-navigation');
+                }
+            });
+
+            document.addEventListener('mousedown', () => {
+                document.body.classList.remove('keyboard-navigation');
+            });
+
+            // Add focus styles for keyboard navigation
+            const focusStyles = document.createElement('style');
+            focusStyles.textContent = `
+                .keyboard-navigation *:focus {
+                    outline: 2px solid #3b82f6 !important;
+                    outline-offset: 2px !important;
+                }
+            `;
+            document.head.appendChild(focusStyles);
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            highlightCurrentSection();
+            addPrintStyles();
+            initAccessibility();
+        });
+
+        // Console log for successful load
+        console.log('Domain Cookie Policy loaded successfully');
+    </script>
+</body>
+</html>

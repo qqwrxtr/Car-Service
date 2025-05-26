@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://domain.com/</loc>
+    <priority>1.0</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <!-- Main Service Pages - High Priority -->
+  <url>
+    <loc>https://domain.com/services/</loc>
+    <priority>0.9</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/about/</loc>
+    <priority>0.8</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/contact/</loc>
+    <priority>0.8</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <!-- Content Pages - Medium Priority -->
+  <url>
+    <loc>https://domain.com/blog/</loc>
+    <priority>0.7</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/gallery/</loc>
+    <priority>0.6</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <!-- Service-Specific Pages - Medium Priority -->
+  <url>
+    <loc>https://domain.com/brake-maintenance/</loc>
+    <priority>0.7</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/diagnostic-technology/</loc>
+    <priority>0.7</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/engine-performance/</loc>
+    <priority>0.7</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/guide-to-winter/</loc>
+    <priority>0.6</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/preventive-maintenance/</loc>
+    <priority>0.7</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/transmission-care/</loc>
+    <priority>0.7</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <!-- Legal Pages - Lower Priority -->
+  <url>
+    <loc>https://domain.com/privacy-policy/</loc>
+    <priority>0.3</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/terms-conditions/</loc>
+    <priority>0.3</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://domain.com/cookie-policy/</loc>
+    <priority>0.2</priority>
+    <lastmod>2025-05-26</lastmod>
+  </url>
+
+</urlset>

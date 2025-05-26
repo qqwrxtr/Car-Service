@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain - Professional Auto Repair Services | Eastern Suburbs Automotive</title>
+    <link rel="icon" href="/assets/images/car-svgrepo-com.svg" type="image/svg+xml">
+    <script src="/assets/js/cookie.js"></script>
+    <meta name="description" content="Professional auto repair services in Woolloomooloo NSW. Expert car servicing, repairs, and maintenance. Trusted by professionals since 2010.">
+    <meta name="keywords" content="auto repair, car service, automotive, Woolloomooloo, NSW, Eastern Suburbs, car maintenance, professional mechanics">
+    <link rel="canonical" href="https://domain.com/">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        light: '#eff6ff'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .floating-car {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-tools {
+            animation: float 8s ease-in-out infinite reverse;
+        }
+        
+        .gear-rotate {
+            animation: rotate 10s linear infinite;
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            100% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3); }
+        }
+                /* Mobile Menu Styles */
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.mobile-nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.mobile-nav-link:hover::before {
+    left: 100%;
+}
+
+/* Hide body scroll when mobile menu is open */
+body.mobile-menu-open {
+    overflow: hidden;
+}
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg" data-aos="fade-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="./" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center"> 
+                        <span class="text-white font-bold text-xl">ES</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Domain</h1>
+                        <p class="text-xs text-gray-600">Eastern Suburbs Automotive</p>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="/" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
+                    <a href="about/" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+                    <a href="blog/" class="text-gray-700 hover:text-primary transition-colors duration-300">Blog</a>
+                    <a href="services/" class="text-gray-700 hover:text-primary transition-colors duration-300">Services</a>
+                    <a href="gallery/" class="text-gray-700 hover:text-primary transition-colors duration-300">Gallery</a>
+                    <a href="contact/" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:0296620423" class="hidden sm:block text-right">
+                        <p class="text-sm font-semibold text-primary">(02) 9662 0423</p>
+                        <p class="text-xs text-gray-600">Call Today</p>
+                    </a>
+                    <button class="lg:hidden p-2 text-primary" id="mobileMenuBtn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+                <!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay fixed inset-0 bg-black/50 backdrop-blur-sm z-[99] lg:hidden opacity-0 invisible transition-all duration-300" id="mobileMenuOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-[100] lg:hidden transform translate-x-full transition-transform duration-300 ease-out" id="mobileMenu">
+    <div class="flex flex-col h-full">
+        <!-- Mobile Menu Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-200">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">ES</span>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Domain</h3>
+                    <p class="text-xs text-gray-600">Eastern Suburbs Automotive</p>
+                </div>
+            </div>
+            <button class="p-2 text-gray-500 hover:text-gray-700 transition-colors duration-200" id="closeMobileMenu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="flex-1 overflow-y-auto">
+            <nav class="p-6 space-y-1">
+                <a href="./" class="mobile-nav-link active flex items-center space-x-3 px-4 py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white shadow-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    <span class="font-semibold">Home</span>
+                </a>
+                
+                <a href="about/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span class="font-semibold">About</span>
+                </a>
+                
+                <a href="blog/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                    </svg>
+                    <span class="font-semibold">Blog</span>
+                </a>
+                
+                <a href="services/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    </svg>
+                    <span class="font-semibold">Services</span>
+                </a>
+                
+                <a href="gallery/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span class="font-semibold">Gallery</span>
+                </a>
+                
+                <a href="contact/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span class="font-semibold">Contact</span>
+                </a>
+            </nav>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="p-6 border-t border-gray-200 bg-gradient-to-r from-light to-blue-50">
+            <div class="text-center">
+                <div class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full mb-3">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Call us today</p>
+                <a href="tel:0296620423" class="text-lg font-bold text-primary">(02) 9662 0423</a>
+            </div>
+            
+            <button onclick="window.location.href = 'contact/'" class="w-full mt-4 bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Book Service Now
+            </button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-light via-white to-blue-50 pt-20">
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-32 h-32 floating-car opacity-20">
+                <img src="assets/images/car-svgrepo-com.svg" alt="">
+            </div>
+            
+            <div class="absolute top-40 right-20 w-16 h-16 floating-tools">
+                <svg viewBox="0 0 24 24" class="w-full h-full text-secondary opacity-30 gear-rotate">
+                    <path fill="currentColor" d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7.29C13.58,7.63 14.17,8 14.71,8.46C15.12,8.22 15.62,8.08 16.17,8.08C17.26,8.08 18.14,8.96 18.14,10.05C18.14,11.14 17.26,12 16.17,12C15.62,12 15.12,11.86 14.71,11.62C14.17,12.08 13.58,12.45 13,12.79V14.35C13.6,14.69 14,15.34 14,16.08C14,17.17 13.12,18.05 12,18.05C10.88,18.05 10,17.17 10,16.08C10,15.34 10.4,14.69 11,14.35V12.79C10.42,12.45 9.83,12.08 9.29,11.62C8.88,11.86 8.38,12 7.83,12C6.74,12 5.86,11.14 5.86,10.05C5.86,8.96 6.74,8.08 7.83,8.08C8.38,8.08 8.88,8.22 9.29,8.46C9.83,8 10.42,7.63 11,7.29V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M12,6.5C11.2,6.5 10.5,7.2 10.5,8C10.5,8.8 11.2,9.5 12,9.5C12.8,9.5 13.5,8.8 13.5,8C13.5,7.2 12.8,6.5 12,6.5Z"/>
+                </svg>
+            </div>
+            
+            <div class="absolute bottom-32 left-1/4 w-20 h-20 floating-car opacity-15">
+                <svg viewBox="0 0 24 24" class="w-full h-full text-accent">
+                    <path fill="currentColor" d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-block px-4 py-2 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full mb-6">
+                    <span class="text-primary font-semibold text-sm">🏆 Premium Auto Care Since 2010</span>
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+                    <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                        Expert Auto
+                    </span>
+                    <br>
+                    <span class="text-gray-900">Repair Services</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Experience unmatched automotive excellence in the heart of Woolloomooloo. 
+                    Our certified technicians deliver premium care for your vehicle with 
+                    cutting-edge technology and uncompromising quality.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="services/" class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        Book Your Service
+                    </a>
+                    <a href="about/" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+                        Learn More
+                    </a>
+                </div>
+                
+                <div class="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-600">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                        <span>24/7 Emergency</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                        <span>Expert Technicians</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="relative z-10">
+                    <img src="assets/images/hero.jpg" alt="Professional Auto Repair Service" class="w-full h-96 lg:h-[500px] object-cover rounded-3xl shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>
+                </div>
+                
+                <!-- Floating Stats Cards -->
+                <div class="absolute -top-6 -left-6 bg-white rounded-2xl p-4 shadow-xl z-50" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">500+</div>
+                        <div class="text-sm text-gray-600">Cars Serviced</div>
+                    </div>
+                </div>
+                
+                <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-xl z-50" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary">15+</div>
+                        <div class="text-sm text-gray-600">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Comprehensive Automotive Services
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From routine maintenance to complex diagnostics, we provide complete automotive solutions 
+                    with the expertise and reliability your vehicle deserves.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Engine Service -->
+                <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-lg transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-900">Engine Diagnostics & Repair</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-4">Advanced diagnostic equipment and expert analysis to identify and resolve engine issues efficiently.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 text-center">
+                        <li>• Computer diagnostics</li>
+                        <li>• Engine tune-ups</li>
+                        <li>• Performance optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Brake Service -->
+                <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-lg transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-900">Brake System Service</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-4">Complete brake system inspection, maintenance, and repair to ensure your safety on the road.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 text-center">
+                        <li>• Brake pad replacement</li>
+                        <li>• Rotor resurfacing</li>
+                        <li>• Brake fluid service</li>
+                    </ul>
+                </div>
+                
+                <!-- Transmission -->
+                <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-lg transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-900">Transmission Service</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-4">Professional transmission maintenance and repair services for both automatic and manual transmissions.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 text-center">
+                        <li>• Transmission fluid service</li>
+                        <li>• Clutch repair</li>
+                        <li>• Transmission rebuilds</li>
+                    </ul>
+                </div>
+                
+                <!-- Air Conditioning -->
+                <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-lg transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-900">Air Conditioning Service</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-4">Complete A/C system maintenance and repair to keep you comfortable in all weather conditions.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 text-center">
+                        <li>• A/C system diagnostics</li>
+                        <li>• Refrigerant recharge</li>
+                        <li>• Component replacement</li>
+                    </ul>
+                </div>
+                
+                <!-- Electrical -->
+                <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-lg transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-900">Electrical System Repair</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-4">Expert diagnosis and repair of automotive electrical systems and components.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 text-center">
+                        <li>• Battery testing & replacement</li>
+                        <li>• Alternator service</li>
+                        <li>• Wiring diagnostics</li>
+                    </ul>
+                </div>
+                
+                <!-- General Maintenance -->
+                <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-lg transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-gray-900">Preventive Maintenance</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-4">Comprehensive maintenance services to keep your vehicle running reliably for years to come.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 text-center">
+                        <li>• Oil changes & filters</li>
+                        <li>• Multi-point inspections</li>
+                        <li>• Scheduled maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gradient-to-br from-light via-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-8">
+                        Why Professionals Choose 
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            Domain
+                        </span>
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900">ASE Certified Excellence</h3>
+                                <p class="text-gray-600">Our certified technicians maintain current ASE certifications and bring decades of combined experience to every repair with ongoing professional training.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900">Advanced Diagnostic Technology</h3>
+                                <p class="text-gray-600">State-of-the-art diagnostic equipment and professional-grade tools ensure precise, efficient, and reliable repairs every time with accurate problem identification.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900">Transparent Pricing & Warranty</h3>
+                                <p class="text-gray-600">Clear, itemized pricing with detailed estimates and no hidden charges. All work backed by our comprehensive 12-month warranty for your peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative" data-aos="fade-left">
+                    <img src="assets/images/mechanic.jpeg" alt="Professional Auto Mechanics" class="w-full h-96 object-cover rounded-3xl shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent rounded-3xl"></div>
+                    
+                    <!-- Achievement Badge -->
+                    <div class="absolute top-6 right-6 bg-white rounded-2xl p-4 shadow-xl">
+                        <div class="text-center">
+                            <div class="text-2xl mb-2">🔧</div>
+                            <div class="text-sm font-bold text-primary">Professional</div>
+                            <div class="text-xs text-gray-600">Service Center</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-br from-light via-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        What Our Clients Say
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Don't just take our word for it. Here's what our satisfied customers have to say about our exceptional automotive services.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "Absolutely exceptional service! The team at Domain went above and beyond to diagnose and fix my car's engine issues. Professional, transparent, and incredibly skilled."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold">
+                            SM
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Sarah Mitchell</p>
+                            <p class="text-sm text-gray-600">BMW Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "I've been coming to Domain for 3 years now. Their expertise, fair pricing, and genuine care for customers is unmatched. Highly recommend to anyone!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white font-bold">
+                            JT
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">James Thompson</p>
+                            <p class="text-sm text-gray-600">Mercedes Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "Quick turnaround, excellent communication, and top-quality work. Domain saved me thousands compared to the dealership quote. True professionals!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white font-bold">
+                            LR
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Lisa Rodriguez</p>
+                            <p class="text-sm text-gray-600">Audi Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Our Professional Process
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience our streamlined, professional approach that ensures your vehicle receives the highest quality care from start to finish.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Process Line -->
+                <div class="absolute top-24 left-1/2 transform -translate-x-1/2 w-1 h-96 bg-gradient-to-b from-primary via-secondary to-accent hidden lg:block"></div>
+                
+                <div class="space-y-16 lg:space-y-32">
+                    <!-- Step 1 -->
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="lg:text-right" data-aos="fade-right">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl text-white font-bold text-2xl mb-6 lg:ml-auto">
+                                1
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4 text-gray-900">Schedule Consultation</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                Contact us to schedule your service appointment. We provide detailed consultations and upfront estimates with transparent pricing for all recommended work.
+                            </p>
+                            <a href="services/" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                Schedule Now
+                            </a>
+                        </div>
+                        <div data-aos="fade-left">
+                            <img src="assets/images/apoitment.png" alt="Professional Consultation Process" class="w-full h-64 object-cover rounded-3xl shadow-xl">
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div data-aos="fade-right" class="lg:order-2">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-2xl text-white font-bold text-2xl mb-6">
+                                2
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4 text-gray-900">Comprehensive Diagnostic Assessment</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                Our ASE-certified technicians perform thorough diagnostic assessments using professional-grade equipment to accurately identify all issues and potential concerns.
+                            </p>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-3 h-3 bg-primary rounded-full"></div>
+                                <span class="text-gray-600">Multi-point inspection</span>
+                            </div>
+                            <div class="flex items-center space-x-4 mt-2">
+                                <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                <span class="text-gray-600">Advanced computer diagnostics</span>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" class="lg:order-1">
+                            <img src="assets/images/veh-inspect.webp" alt="Professional Vehicle Diagnostic Process" class="w-full h-64 object-cover rounded-3xl shadow-xl">
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="lg:text-right" data-aos="fade-right">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-2xl text-white font-bold text-2xl mb-6 lg:ml-auto">
+                                3
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4 text-gray-900">Expert Repair & Quality Assurance</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                Using genuine parts and proven techniques, our skilled technicians perform all necessary repairs with precision. All work is backed by our comprehensive warranty.
+                            </p>
+                            <div class="space-y-2 lg:text-right">
+                                <div class="flex items-center space-x-4 lg:justify-end">
+                                    <span class="text-gray-600">Quality genuine parts</span>
+                                    <div class="w-3 h-3 bg-primary rounded-full"></div>
+                                </div>
+                                <div class="flex items-center space-x-4 lg:justify-end">
+                                    <span class="text-gray-600">12-month warranty</span>
+                                    <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left">
+                            <img src="assets/images/profesional.jpg" alt="Professional Auto Repair Service" class="w-full h-64 object-cover rounded-3xl shadow-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 via-light to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Professional Service Benefits
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    When you choose Domain, you're investing in professional automotive care with comprehensive benefits and guarantees for your peace of mind.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Professional Communication</h3>
+                    <p class="text-gray-600">Clear communication throughout the process with detailed explanations and regular updates on your vehicle's status.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
+                    <p class="text-gray-600">Fair, competitive pricing with detailed estimates and no hidden charges or surprise fees.</p>
+                </div>
+                                
+                <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-primary rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">12-Month Warranty</h3>
+                    <p class="text-gray-600">Comprehensive warranty on all parts and labor for complete peace of mind and confidence in our work.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-3xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Same-Day Service</h3>
+                    <p class="text-gray-600">Most repairs completed within the same day to minimize disruption to your schedule and daily routine.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact & Location Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Visit Our Professional Facility
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Located in the heart of Woolloomooloo, our modern facility is equipped with the latest 
+                    automotive technology and staffed by industry-leading professionals.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="bg-gradient-to-br from-light to-white p-8 rounded-3xl shadow-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-semibold text-gray-900">(02) 9662 0423</p>
+                                    <p class="text-gray-600">Call for professional consultation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-semibold text-gray-900">137 – 157 Bourke Street</p>
+                                    <p class="text-gray-600">Woolloomooloo NSW 2011</p>
+                                    <a href="https://www.google.com/maps/place/Eastern+Suburbs+Automotive/@-33.8732764,151.2155011,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12b1b94a4b8f15:0xbfc619dff909e798!8m2!3d-33.8732809!4d151.2180814!16s%2Fg%2F11x9jgtfz?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" 
+                                       target="_blank" 
+                                       class="inline-block mt-2 text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                                        View on Google Maps →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl">
+                            <h4 class="font-bold text-gray-900 mb-2">Business Hours</h4>
+                            <div class="space-y-1 text-sm text-gray-600">
+                                <div class="flex justify-between">
+                                    <span>Monday - Friday:</span>
+                                    <span class="font-medium">7:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Saturday:</span>
+                                    <span class="font-medium">8:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span class="font-medium">Emergency Only</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <div class="w-full h-96 rounded-3xl shadow-2xl overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.7645234567!2d151.2155011!3d-33.8732764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1b94a4b8f15%3A0xbfc619dff909e798!2sEastern%20Suburbs%20Automotive!5e0!3m2!1sen!2sau!4v1679876543210!5m2!1sen!2sau"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; border-radius: 1.5rem;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Eastern Suburbs Automotive Location - 137-157 Bourke Street, Woolloomooloo NSW 2011">
+                        </iframe>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <a href="services/" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            Schedule Your Professional Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">ES</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Domain</h3>
+                            <p class="text-gray-400">Professional Auto Services</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+                        Your trusted automotive service partner in Woolloomooloo. Professional repairs, 
+                        transparent pricing, and reliable service since 2010.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="bg-white/10 rounded-lg p-3">
+                            <p class="text-sm font-semibold">(02) 9662 0423</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services/" class="text-gray-300 hover:text-white transition-colors duration-300">Engine Repair</a></li>
+                        <li><a href="services/" class="text-gray-300 hover:text-white transition-colors duration-300">Brake Service</a></li>
+                        <li><a href="services/" class="text-gray-300 hover:text-white transition-colors duration-300">Transmission</a></li>
+                        <li><a href="services/" class="text-gray-300 hover:text-white transition-colors duration-300">Air Conditioning</a></li>
+                        <li><a href="services/" class="text-gray-300 hover:text-white transition-colors duration-300">Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about/" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="contact/" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="gallery/" class="text-gray-300 hover:text-white transition-colors duration-300">Gallery</a></li>
+                        <li><a href="privacy-policy/" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms-conditions/" class="text-gray-300 hover:text-white transition-colors duration-300">Terms & Conditions</a></li>
+                        <li><a href="cookie-policy/" class="text-gray-300 hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Domain - Eastern Suburbs Automotive. All rights reserved. 
+                    <span class="text-primary">Licensed automotive repair facility in Woolloomooloo, NSW.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        // Mobile Menu Functionality
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+// Open mobile menu
+mobileMenuBtn.addEventListener('click', function() {
+    openMobileMenu();
+});
+
+// Close mobile menu button
+closeMobileMenu.addEventListener('click', function() {
+    closeMobileMenuFunc();
+});
+
+// Close mobile menu when clicking overlay
+mobileMenuOverlay.addEventListener('click', function() {
+    closeMobileMenuFunc();
+});
+
+// Close mobile menu when clicking nav links
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        setTimeout(closeMobileMenuFunc, 150);
+    });
+});
+
+function openMobileMenu() {
+    mobileMenu.classList.add('active');
+    mobileMenuOverlay.classList.add('active');
+    document.body.classList.add('mobile-menu-open');
+}
+
+function closeMobileMenuFunc() {
+    mobileMenu.classList.remove('active');
+    mobileMenuOverlay.classList.remove('active');
+    document.body.classList.remove('mobile-menu-open');
+}
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+        closeMobileMenuFunc();
+    }
+});
+
+// Close mobile menu on window resize if it gets too large
+window.addEventListener('resize', function() {
+    if (window.innerWidth >= 1024 && mobileMenu.classList.contains('active')) {
+        closeMobileMenuFunc();
+    }
+});
+    </script>
+</body>
+</html> 

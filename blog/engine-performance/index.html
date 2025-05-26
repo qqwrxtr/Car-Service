@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximizing Engine Performance: Professional Tuning Secrets - Domain Blog | Eastern Suburbs Automotive</title>
+        <link rel="icon" href="/assets/images/car-svgrepo-com.svg" type="image/svg+xml">
+    <script src="/assets/js/cookie.js"></script>
+    <meta name="description" content="Unlock your engine's potential with professional tuning techniques from Domain experts. Learn how proper maintenance and expert adjustments can improve performance and fuel efficiency in Woolloomooloo, NSW.">
+    <meta name="keywords" content="engine performance, engine tuning, fuel efficiency, engine optimization, car performance, Domain, Woolloomooloo, NSW, automotive tuning">
+    <link rel="canonical" href="https://domain.com/blog/engine-performance/">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        light: '#eff6ff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg" data-aos="fade-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="../../" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center"> 
+                        <span class="text-white font-bold text-xl">ES</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Domain</h1>
+                        <p class="text-xs text-gray-600">Eastern Suburbs Automotive</p>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="../../" class="text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="../../about/" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+                    <a href="../../blog/" class="text-primary font-semibold border-b-2 border-primary pb-1">Blog</a>
+                    <a href="../../services/" class="text-gray-700 hover:text-primary transition-colors duration-300">Services</a>
+                    <a href="../../gallery/" class="text-gray-700 hover:text-primary transition-colors duration-300">Gallery</a>
+                    <a href="../../contact/" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:0296620423" class="hidden sm:block text-right">
+                        <p class="text-sm font-semibold text-primary">(02) 9662 0423</p>
+                        <p class="text-xs text-gray-600">Call Today</p>
+                    </a>
+                    <button class="lg:hidden p-2 text-primary" id="mobileMenuBtn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay fixed inset-0 bg-black/50 backdrop-blur-sm z-[99] lg:hidden opacity-0 invisible transition-all duration-300" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-[100] lg:hidden transform translate-x-full transition-transform duration-300 ease-out" id="mobileMenu">
+        <div class="flex flex-col h-full">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">ES</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Domain</h3>
+                        <p class="text-xs text-gray-600">Eastern Suburbs Automotive</p>
+                    </div>
+                </div>
+                <button class="p-2 text-gray-500 hover:text-gray-700 transition-colors duration-200" id="closeMobileMenu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="flex-1 overflow-y-auto">
+                <nav class="p-6 space-y-1">
+                    <a href="../../" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        <span class="font-semibold">Home</span>
+                    </a>
+                    
+                    <a href="../../about/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="font-semibold">About</span>
+                    </a>
+                    
+                    <a href="../../blog/" class="mobile-nav-link active flex items-center space-x-3 px-4 py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                        </svg>
+                        <span class="font-semibold">Blog</span>
+                    </a>
+                    
+                    <a href="../../services/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        </svg>
+                        <span class="font-semibold">Services</span>
+                    </a>
+                    
+                    <a href="../../gallery/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="font-semibold">Gallery</span>
+                    </a>
+                    
+                    <a href="../../contact/" class="mobile-nav-link flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-light hover:to-blue-50 hover:text-primary transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="font-semibold">Contact</span>
+                    </a>
+                </nav>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="p-6 border-t border-gray-200 bg-gradient-to-r from-light to-blue-50">
+                <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">Call us today</p>
+                    <a href="tel:0296620423" class="text-lg font-bold text-primary">(02) 9662 0423</a>
+                </div>
+                
+                <button onclick="window.location.href = '../../contact/'" class="w-full mt-4 bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    Book Service Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Header -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-32 pt-40">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8" data-aos="fade-up">
+                <div class="inline-block px-4 py-2 bg-white/20 rounded-full mb-6">
+                    <span class="text-white font-semibold text-sm">🚀 PERFORMANCE TUNING GUIDE</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Maximizing Engine Performance: Professional Tuning Secrets
+                </h1>
+                <p class="text-xl sm:text-2xl mb-8 text-white/90">
+                    Unlock your engine's true potential with expert tuning techniques and optimization strategies
+                </p>
+            </div>
+            
+            <!-- Article Meta -->
+            <div class="flex flex-col sm:flex-row items-center justify-between bg-white/10 backdrop-blur-md rounded-2xl p-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">MJ</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg">Michael Johnson</p>
+                        <p class="text-white/80">Performance Specialist • Domain</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6 text-white/80">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>7 min read</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 6v10m6-10v10m-6-10H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V15a2 2 0 00-2-2h-4z"></path>
+                        </svg>
+                        <span>April 8, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Introduction -->
+            <div class="text-lg leading-relaxed text-gray-700 mb-12" data-aos="fade-up">
+                <p class="text-xl font-medium text-gray-900 mb-6">
+                    Every engine has untapped potential waiting to be unleashed. Through decades of professional tuning experience at Domain, we've discovered that proper engine optimization isn't just about raw power—it's about achieving the perfect balance of performance, efficiency, and reliability.
+                </p>
+                <p class="mb-6">
+                    Whether you're looking to improve fuel economy, increase horsepower, or simply ensure your engine runs at its absolute best, professional tuning techniques can transform your driving experience. This comprehensive guide reveals the insider secrets we use to maximize engine performance for our Woolloomooloo clients.
+                </p>
+            </div>
+
+            <!-- Understanding Engine Performance -->
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Understanding Engine Performance Fundamentals</h2>
+                
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8">
+                    <div class="flex items-center mb-2">
+                        <svg class="w-6 h-6 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-lg font-semibold text-blue-800">Performance Principle</h3>
+                    </div>
+                    <p class="text-blue-700">
+                        Engine performance is determined by how efficiently your engine converts fuel into power. Every component from air intake to exhaust plays a crucial role in this conversion process.
+                    </p>
+                </div>
+
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">The Four Pillars of Engine Performance</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-white border-2 border-orange-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-orange-600">Air Flow Optimization</h4>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Engines are essentially air pumps. The more efficiently they can move air in and out, the more power they can produce.
+                            </p>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>• High-flow air filters increase intake volume</li>
+                                <li>• Cold air intake systems improve density</li>
+                                <li>• Throttle body cleaning optimizes airflow</li>
+                                <li>• Intake manifold tuning balances distribution</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-red-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-red-600">Fuel System Precision</h4>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Perfect fuel delivery ensures optimal combustion under all operating conditions for maximum efficiency and power.
+                            </p>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>• Fuel injector cleaning and calibration</li>
+                                <li>• Fuel pump pressure optimization</li>
+                                <li>• Air-fuel ratio fine-tuning</li>
+                                <li>• Fuel system pressure testing</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-yellow-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-yellow-600">Ignition Timing</h4>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Perfect ignition timing ensures maximum power extraction from every combustion cycle while preventing engine damage.
+                            </p>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>• Spark plug gap optimization</li>
+                                <li>• Ignition coil performance testing</li>
+                                <li>• Timing advance curve adjustment</li>
+                                <li>• Knock sensor calibration</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border-2 border-green-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-green-600">Exhaust Flow</h4>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Efficient exhaust removal is crucial for maintaining engine breathing and preventing power-robbing back pressure.
+                            </p>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li>• Exhaust manifold inspection</li>
+                                <li>• Catalytic converter efficiency</li>
+                                <li>• Muffler flow optimization</li>
+                                <li>• Back pressure measurement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Tuning Techniques -->
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Professional Tuning Techniques That Deliver Results</h2>
+                
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">ECU Tuning: The Heart of Modern Performance</h3>
+                    <p class="mb-6">
+                        Modern engines are controlled by sophisticated Electronic Control Units (ECUs) that manage everything from fuel delivery to ignition timing. Professional ECU tuning can unlock significant performance gains while maintaining reliability.
+                    </p>
+
+                    <div class="bg-gradient-to-r from-light to-blue-50 rounded-xl p-8 mb-8">
+                        <h4 class="text-lg font-semibold text-blue-900 mb-4">Our ECU Tuning Process</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold text-blue-800 mb-3">Phase 1: Analysis & Baseline</h5>
+                                <ul class="space-y-2 text-blue-700 text-sm">
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">1.</span>
+                                        <span>Comprehensive engine diagnostics and health check</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">2.</span>
+                                        <span>Dyno testing to establish current power/torque curves</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">3.</span>
+                                        <span>ECU data extraction and analysis</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">4.</span>
+                                        <span>Customer performance goals assessment</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-blue-800 mb-3">Phase 2: Optimization & Testing</h5>
+                                <ul class="space-y-2 text-blue-700 text-sm">
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">1.</span>
+                                        <span>Custom map development for fuel and ignition</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">2.</span>
+                                        <span>Real-time tuning adjustments on dyno</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">3.</span>
+                                        <span>Safety parameter verification and knock protection</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span class="text-blue-500 font-bold mt-1">4.</span>
+                                        <span>Road testing and final validation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Performance Modifications: Hardware That Makes a Difference</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white border border-gray-200 rounded-xl p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3">Intake System Upgrades</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Cold Air Intake</p>
+                                        <p class="text-xs text-gray-600">5-15 HP gain</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">High-Flow Filter</p>
+                                        <p class="text-xs text-gray-600">3-8 HP gain</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Throttle Body</p>
+                                        <p class="text-xs text-gray-600">8-20 HP gain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-xl p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3">Exhaust System</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Cat-Back System</p>
+                                        <p class="text-xs text-gray-600">8-15 HP gain</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Headers</p>
+                                        <p class="text-xs text-gray-600">12-25 HP gain</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">High-Flow Cats</p>
+                                        <p class="text-xs text-gray-600">5-12 HP gain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-xl p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3">Engine Internals</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Performance Cams</p>
+                                        <p class="text-xs text-gray-600">15-35 HP gain</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-pink-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Port & Polish</p>
+                                        <p class="text-xs text-gray-600">10-20 HP gain</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
+                                        <div class="w-2 h-2 bg-teal-500 rounded-full"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900">Higher Compression</p>
+                                        <p class="text-xs text-gray-600">20-40 HP gain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fuel Efficiency Optimization -->
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Fuel Efficiency Optimization: Power and Economy Balance</h2>
+                
+                <div class="bg-green-50 border-l-4 border-green-400 p-6 mb-8">
+                    <div class="flex items-center mb-2">
+                        <svg class="w-6 h-6 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-lg font-semibold text-green-800">Efficiency Secret</h3>
+                    </div>
+                    <p class="text-green-700">
+                        The best engine tunes improve both power and fuel efficiency. By optimizing combustion efficiency, you can achieve better performance while using less fuel.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Combustion Optimization Techniques</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900">Lean Burn Tuning:</strong>
+                                    <p class="text-gray-600 text-sm">Optimize air-fuel ratios for maximum efficiency during cruising conditions</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900">Variable Valve Timing:</strong>
+                                    <p class="text-gray-600 text-sm">Adjust timing maps for optimal efficiency across RPM ranges</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900">Closed Loop Operation:</strong>
+                                    <p class="text-gray-600 text-sm">Ensure O2 sensors provide accurate feedback for fuel control</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Real-World Efficiency Gains</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-gray-900">City Driving</span>
+                                    <span class="text-green-600 font-bold">+15-25%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-gray-900">Highway Cruising</span>
+                                    <span class="text-green-600 font-bold">+10-20%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-gray-900">Combined Average</span>
+                                    <span class="text-green-600 font-bold">+12-22%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Maintenance for Performance -->
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Maintenance Secrets for Sustained Performance</h2>
+                
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <p class="text-lg mb-8">
+                        Even the best performance tune will degrade without proper maintenance. Here are the professional maintenance practices that keep your engine performing at its peak for years to come.
+                    </p>
+
+                    <div class="bg-orange-50 rounded-xl p-6 mb-8">
+                        <h3 class="text-xl font-semibold text-orange-900 mb-4">Performance Maintenance Schedule</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-orange-800 mb-3">Every 5,000km</h4>
+                                <ul class="space-y-1 text-orange-700 text-sm">
+                                    <li>• Premium oil change with synthetic blend</li>
+                                    <li>• Air filter inspection and cleaning</li>
+                                    <li>• Throttle body cleaning if needed</li>
+                                    <li>• Fuel injector cleaner treatment</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-orange-800 mb-3">Every 15,000km</h4>
+                                <ul class="space-y-1 text-orange-700 text-sm">
+                                    <li>• Spark plug inspection and replacement</li>
+                                    <li>• Fuel filter replacement</li>
+                                    <li>• Mass airflow sensor cleaning</li>
+                                    <li>• Engine carbon cleaning service</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-orange-800 mb-3">Every 30,000km</h4>
+                                <ul class="space-y-1 text-orange-700 text-sm">
+                                    <li>• Comprehensive engine diagnostics</li>
+                                    <li>• Ignition system complete service</li>
+                                    <li>• Fuel system deep cleaning</li>
+                                    <li>• Performance re-validation on dyno</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Critical Performance Components</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">High-Performance Oil Requirements</h4>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <ul class="space-y-2 text-gray-700 text-sm">
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Full Synthetic:</strong> Essential for high-performance engines</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Viscosity:</strong> 0W-20 or 5W-30 for optimal flow</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Additives:</strong> Friction modifiers and detergents</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <span><strong>Change Frequency:</strong> Every 5,000km for modified engines</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">Fuel Quality Impact</h4>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <ul class="space-y-2 text-gray-700 text-sm">
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                        <span><strong>Premium Fuel:</strong> 95+ octane prevents knock</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                        <span><strong>Top Tier Brands:</strong> Better detergent packages</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                        <span><strong>Fuel Additives:</strong> Periodic cleaning treatments</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                        <span><strong>Storage:</strong> Keep tank above 1/4 full</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Performance Monitoring -->
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Performance Monitoring: Protecting Your Investment</h2>
+                
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 mb-8">
+                    <div class="flex items-center mb-2">
+                        <svg class="w-6 h-6 text-red-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <h3 class="text-lg font-semibold text-red-800">Performance Protection</h3>
+                    </div>
+                    <p class="text-red-700">
+                        High-performance engines require constant monitoring to prevent damage. Early detection of issues protects your investment and maintains optimal performance.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Essential Monitoring Parameters</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium text-gray-900">Oil Temperature</span>
+                                <span class="text-sm text-gray-600">Max: 120°C</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium text-gray-900">Oil Pressure</span>
+                                <span class="text-sm text-gray-600">Min: 1 bar/1000rpm</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium text-gray-900">Coolant Temperature</span>
+                                <span class="text-sm text-gray-600">Max: 95°C</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium text-gray-900">Intake Air Temperature</span>
+                                <span class="text-sm text-gray-600">Target: <10°C above ambient</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium text-gray-900">Air-Fuel Ratio</span>
+                                <span class="text-sm text-gray-600">Target: 14.7:1 (stoich)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Warning Signs to Watch</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-red-700">Engine Knock:</strong>
+                                    <p class="text-gray-600 text-sm">Metallic pinging under acceleration - reduce timing or octane</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-orange-700">Rough Idle:</strong>
+                                    <p class="text-gray-600 text-sm">Unstable RPM or vibration - check fuel system and ignition</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-yellow-700">Power Loss:</strong>
+                                    <p class="text-gray-600 text-sm">Reduced acceleration - may indicate fuel delivery or airflow issues</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                </div>
+                                <div>
+                                    <strong class="text-blue-700">Excessive Heat:</strong>
+                                    <p class="text-gray-600 text-sm">High temperatures under load - check cooling system capacity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="bg-gradient-to-br from-primary to-secondary rounded-3xl p-8 sm:p-12 text-white text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Unlock Your Engine's Potential?</h2>
+                <p class="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
+                    Experience the Domain difference with professional engine tuning that balances power, efficiency, and reliability. Our expert technicians use cutting-edge equipment to optimize your engine's performance.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                    <a href="tel:0296620423" class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        Call Now: (02) 9662 0423
+                    </a>
+                    <a href="../../services/" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300">
+                        Book Performance Tuning
+                    </a>
+                </div>
+                <div class="mt-6 text-white/80">
+                    <p class="font-semibold">Professional dyno tuning available • 12-month performance warranty</p>
+                </div>
+            </section>
+
+            <!-- Author Bio -->
+            <section class="bg-white rounded-3xl p-8 sm:p-12 shadow-lg mb-16" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+                    <div class="w-32 h-32 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0">
+                        MJ
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Michael Johnson</h3>
+                        <p class="text-primary font-semibold mb-4">Performance Specialist & Lead Technician</p>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Michael has over 15 years of experience in engine performance tuning and optimization. As Domain's lead performance specialist, he's successfully tuned hundreds of engines, achieving remarkable gains in both power and efficiency. Michael holds certifications in ECU tuning, dyno operation, and advanced engine diagnostics, making him one of Sydney's most sought-after performance technicians.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-500">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                                <span>Performance Tuning Certified</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>15+ Years Experience</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                </svg>
+                                <span>Woolloomooloo, NSW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Articles -->
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Related Articles</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="h-48 object-cover flex items-center justify-center">
+                            <img src="../../assets/images/blog/brake-maintenance.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">MAINTENANCE</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Essential Brake Maintenance: Warning Signs You Can't Ignore</h3>
+                            <p class="text-gray-600 text-sm mb-4">Learn to identify critical brake warning signs before they become dangerous.</p>
+                            <a href="../brake-maintenance/" class="text-primary font-semibold hover:text-secondary transition-colors duration-300">
+                                Read Article →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="h-48 object-cover flex items-center justify-center">
+                            <img src="../../assets/images/blog/winter-maintenance.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs uppercase tracking-wider text-blue-500 font-semibold mb-2">SEASONAL</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">The Complete Guide to Winter Car Maintenance</h3>
+                            <p class="text-gray-600 text-sm mb-4">Professional strategies to protect your vehicle when temperatures drop.</p>
+                            <a href="../guide-to-winter/" class="text-primary font-semibold hover:text-secondary transition-colors duration-300">
+                                Read Article →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="h-48 object-cover flex items-center justify-center">
+                            <img src="../../assets/images/blog/preventive-maintenance.jfif" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-2">MAINTENANCE</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">The Ultimate Preventive Maintenance Schedule</h3>
+                            <p class="text-gray-600 text-sm mb-4">Follow our comprehensive maintenance schedule to keep your vehicle running reliably.</p>
+                            <a href="../preventive-maintenance/" class="text-primary font-semibold hover:text-secondary transition-colors duration-300">
+                                Read Article →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">ES</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Domain</h3>
+                            <p class="text-gray-400">Professional Auto Services</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md">
+                        Your trusted automotive service partner in Woolloomooloo. Professional repairs, 
+                        transparent pricing, and reliable service since 2010.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="bg-white/10 rounded-lg p-3">
+                            <p class="text-sm font-semibold">(02) 9662 0423</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Engine Repair</a></li>
+                        <li><a href="../../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Brake Service</a></li>
+                        <li><a href="../../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Transmission</a></li>
+                        <li><a href="../../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Air Conditioning</a></li>
+                        <li><a href="../../services/" class="text-gray-300 hover:text-white transition-colors duration-300">Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../about/" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="../../contact/" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="../../gallery/" class="text-gray-300 hover:text-white transition-colors duration-300">Gallery</a></li>
+                        <li><a href="../../privacy-policy/" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="../../terms-conditions/" class="text-gray-300 hover:text-white transition-colors duration-300">Terms & Conditions</a></li>
+                        <li><a href="../../cookie-policy/" class="text-gray-300 hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Domain - Eastern Suburbs Automotive. All rights reserved. 
+                    <span class="text-primary">Licensed automotive repair facility in Woolloomooloo, NSW.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        // Mobile menu styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .mobile-menu-overlay.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .mobile-menu.active {
+                transform: translateX(0);
+            }
+
+            .mobile-nav-link {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .mobile-nav-link::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+                transition: left 0.5s;
+            }
+
+            .mobile-nav-link:hover::before {
+                left: 100%;
+            }
+
+            body.mobile-menu-open {
+                overflow: hidden;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Open mobile menu
+        mobileMenuBtn?.addEventListener('click', function() {
+            openMobileMenu();
+        });
+
+        // Close mobile menu button
+        closeMobileMenu?.addEventListener('click', function() {
+            closeMobileMenuFunc();
+        });
+
+        // Close mobile menu when clicking overlay
+        mobileMenuOverlay?.addEventListener('click', function() {
+            closeMobileMenuFunc();
+        });
+
+        // Close mobile menu when clicking nav links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                setTimeout(closeMobileMenuFunc, 150);
+            });
+        });
+
+        function openMobileMenu() {
+            mobileMenu?.classList.add('active');
+            mobileMenuOverlay?.classList.add('active');
+            document.body.classList.add('mobile-menu-open');
+        }
+
+        function closeMobileMenuFunc() {
+            mobileMenu?.classList.remove('active');
+            mobileMenuOverlay?.classList.remove('active');
+            document.body.classList.remove('mobile-menu-open');
+        }
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenu?.classList.contains('active')) {
+                closeMobileMenuFunc();
+            }
+        });
+
+        // Close mobile menu on window resize if it gets too large
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 1024 && mobileMenu?.classList.contains('active')) {
+                closeMobileMenuFunc();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Reading progress indicator
+        function createProgressIndicator() {
+            const progressBar = document.createElement('div');
+            progressBar.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 3px;
+                background: linear-gradient(90deg, #1e40af, #3b82f6);
+                z-index: 1000;
+                transition: width 0.3s ease;
+            `;
+            document.body.appendChild(progressBar);
+
+            window.addEventListener('scroll', () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                progressBar.style.width = scrolled + '%';
+            });
+        }
+
+        // Initialize progress indicator
+        createProgressIndicator();
+
+        // Schema.org structured data
+        function addStructuredData() {
+            const structuredData = {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Maximizing Engine Performance: Professional Tuning Secrets",
+                "description": "Unlock your engine's potential with professional tuning techniques from Domain experts. Learn how proper maintenance and expert adjustments can improve performance and fuel efficiency.",
+                "image": "https://domain.com/assets/images/blog/hero_2.jpeg",
+                "author": {
+                    "@type": "Person",
+                    "name": "Michael Johnson",
+                    "jobTitle": "Performance Specialist",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Domain - Eastern Suburbs Automotive"
+                    }
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Domain - Eastern Suburbs Automotive",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://domain.com/assets/images/logo.png"
+                    }
+                },
+                "datePublished": "2025-04-08",
+                "dateModified": "2025-04-08",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": window.location.href
+                },
+                "articleSection": "Engine Performance",
+                "keywords": ["engine performance", "engine tuning", "fuel efficiency", "engine optimization", "car performance", "automotive tuning"],
+                "about": {
+                    "@type": "Thing",
+                    "name": "Engine Performance Tuning"
+                }
+            };
+
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(structuredData);
+            document.head.appendChild(script);
+        }
+
+        // Add structured data
+        addStructuredData();
+
+        // Social sharing functionality  
+        function createSocialShare() {
+            const shareData = {
+                title: 'Maximizing Engine Performance: Professional Tuning Secrets - Domain',
+                text: 'Unlock your engine\'s potential with expert tuning techniques from Domain professionals.',
+                url: window.location.href
+            };
+
+            // Add floating share button
+            const shareButton = document.createElement('div');
+            shareButton.innerHTML = `
+                <button class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300" onclick="shareArticle()">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+                    </svg>
+                </button>
+            `;
+            shareButton.style.cssText = `
+                position: fixed;
+                top: 50%;
+                right: 20px;
+                z-index: 88;
+                transform: translateY(-50%);
+            `;
+            document.body.appendChild(shareButton);
+
+            window.shareArticle = async function() {
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                    } catch (err) {
+                        console.log('Error sharing:', err);
+                    }
+                } else {
+                    // Fallback to copying URL
+                    navigator.clipboard.writeText(window.location.href).then(() => {
+                        alert('Article URL copied to clipboard!');
+                    });
+                }
+            };
+        }
+
+        // Initialize social sharing
+        createSocialShare();
+
+        // Accessibility improvements
+        function initAccessibility() {
+            // Add skip link
+            const skipLink = document.createElement('a');
+            skipLink.href = '#main-content';
+            skipLink.textContent = 'Skip to main content';
+            skipLink.style.cssText = `
+                position: absolute;
+                top: -40px;
+                left: 6px;
+                background: #000;
+                color: #fff;
+                padding: 8px;
+                text-decoration: none;
+                border-radius: 4px;
+                z-index: 1001;
+                transition: top 0.3s;
+            `;
+            skipLink.addEventListener('focus', () => {
+                skipLink.style.top = '6px';
+            });
+            skipLink.addEventListener('blur', () => {
+                skipLink.style.top = '-40px';
+            });
+            document.body.insertBefore(skipLink, document.body.firstChild);
+
+            // Add main content id
+            const article = document.querySelector('article');
+            if (article) {
+                article.id = 'main-content';
+            }
+
+            // Enhance keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab') {
+                    document.body.classList.add('keyboard-navigation');
+                }
+            });
+
+            document.addEventListener('mousedown', () => {
+                document.body.classList.remove('keyboard-navigation');
+            });
+
+            // Add focus styles for keyboard navigation
+            const focusStyles = document.createElement('style');
+            focusStyles.textContent = `
+                .keyboard-navigation *:focus {
+                    outline: 2px solid #dc2626 !important;
+                    outline-offset: 2px !important;
+                }
+            `;
+            document.head.appendChild(focusStyles);
+        }
+
+        // Initialize accessibility
+        initAccessibility();
+
+        // Print functionality
+        function initPrintStyles() {
+            const printStyles = document.createElement('style');
+            printStyles.textContent = `
+                @media print {
+                    nav, footer, .floating-share {
+                        display: none !important;
+                    }
+                    
+                    body {
+                        font-size: 12px;
+                        line-height: 1.4;
+                    }
+                    
+                    .bg-gradient-to-r,
+                    .bg-gradient-to-br {
+                        background: #f8f9fa !important;
+                        color: #000 !important;
+                    }
+                    
+                    a {
+                        color: #000 !important;
+                        text-decoration: underline;
+                    }
+                    
+                    .text-white {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(printStyles);
+        }
+
+        // Initialize print styles
+        initPrintStyles();
+
+        // Performance monitoring
+        function initPerformanceMonitoring() {
+            // Monitor loading performance
+            window.addEventListener('load', () => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('Engine performance guide load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+            });
+        }
+
+        // Initialize performance monitoring
+        initPerformanceMonitoring();
+
+        // Error handling
+        window.addEventListener('error', (e) => {
+            console.error('JavaScript error:', e.error);
+        });
+
+        window.addEventListener('unhandledrejection', (e) => {
+            console.error('Unhandled promise rejection:', e.reason);
+        });
+
+        // Initialize all components when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Domain Engine Performance Guide loaded successfully');
+        });
+    </script>
+</body>
+</html>
